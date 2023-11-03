@@ -61,7 +61,7 @@ Test without any symptoms:
 ## Interesting find commands
 *```find / -name "*.txt" 2>/dev/null``` command* 
 
-In the ```c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical``` directory:
+In the ```/c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical``` directory:
 ```
 /wp-exploitable-themes.txt
 /mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/wp-plugins.txt
@@ -75,7 +75,7 @@ In the ```c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical``` direc
 /mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/external/source/exploits/CVE-2015-2426/LICENSE.txt
 ^C
 ```
-In the ```c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical/government``` dierctory:
+In the ```/c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical/government``` dierctory:
 ```e/pxesploit/regeditor/README.txt
 /mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/external/source/shellcode/windows/speech/COPYRIGHT.txt
 /mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/external/source/vncdll/vncdll/LICENSE.txt
@@ -92,3 +92,65 @@ This command allows you to find where you saved a file as long as  you know the 
 
 *```find / -iname "*foo*txt" 2>/dev/null``` command*
 
+In the ```/c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical/plos``` directory: 
+```
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/unix_users.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/vnc_passwords.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/vxworks_collide_20.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/vxworks_common_20.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/wp-exploitable-plugins.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/wp-exploitable-themes.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/wp-plugins.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/wp-themes.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/docs/robots.txt
+```
+
+In the ```/c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical/biomed``` directory:
+```/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/unix_passwords.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/unix_users.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/vnc_passwords.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/vxworks_collide_20.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/vxworks_common_20.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/wp-exploitable-plugins.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/wp-exploitable-themes.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/wp-plugins.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/data/wordlists/wp-themes.txt
+/mnt/e/$RECYCLE.BIN/S-1-5-21-3021986586-1156689342-2357939180-1002/$R1733Q0/embedded/framework/docs/robots.txt
+```
+This command allows you to do a partial, case-insensitive search of a directory and allows you to pinpoint an exact file that you're looking for by an approximate name.
+
+*```find /path/to/file -iname "*~" -o -iname "*log*" -mtime +30``` command:*
+
+In the ```/var/log``` directory:
+```
+/var/log
+/var/log/dpkg.log
+/var/log/alternatives.log
+/var/log/bootstrap.log
+/var/log/apt/eipp.log.xz
+/var/log/apt/history.log
+/var/log/apt/term.log
+/var/log/lastlog
+find: ‘/var/log/private’: Permission denied
+/var/log/faillog
+```
+
+In the ```/c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical/911report``` directory:
+
+*There was nothing for this output as there weren't any files older than the specified index*
+
+This command allows you to limit a search to files older than, but alos files newer than, some value times 24. The + before the -mtime number doesn't mean to add that number to the time. It's a conditional statement that matches (in this example) a value greater than 24 times 30. In other words, the code finds log files that haven't been modified in a month or more.
+
+*```find ~ -type f -empty``` command:*
+
+In the ```/c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical/911report``` directory:
+
+*This output was empty as there weren't any empty files*
+
+In the ```/c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical``` directory:
+
+*This output was empty as there weren't any empty files*
+
+This command allows you to discover empty files and declutter your directories. If you don't include -f in your search, you might accidentally delete some important directory structures.
+
+*(Some outputs were shortened due to extensive size)*
