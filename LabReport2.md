@@ -38,9 +38,13 @@ The server responds with “1. Hello\n2. How are you”.
 
 *Path to public and private keys*
 
-![Image](Path_to_Public_and_Private_keys.png)
+![Image](fixedScreenshotFullPath.png)
 
-The path to the public and private keys is `C:\Users\Johan\.ssh` 
+The full path to the public and private keys is ```C:\Users\Johan\.ssh```
+
+![Image](fixedScreenshotPublicKey.png)
+
+The full path on ieng6 to the public key is ```/home/linux/ieng6/cs15lfa23/cs15lfa23rc/.ssh```. Within this path is the ```authorized_keys``` file. This file contains my public key, and if I run ```cat authorized_keys``` within this directory, then the contents of my public key are returned.
 
 *Logging into ieng6 without being asked for a password*
 
