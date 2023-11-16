@@ -153,4 +153,5 @@ In the ```/c/Users/Johan/OneDrive/Documents/GitClone/docsearch/technical``` dire
 
 This command allows you to discover empty files and declutter your directories. If you don't include -f in your search, you might accidentally delete some important directory structures.
 
-*(Some outputs were shortened due to extensive size)*
+Citations: 
+Kenlon, Seth. “10 ways to use the Linux find command.” Enable Sysadmin, 7 Oct. 2022, [Link](https://www.redhat.com/sysadmin/linux-find-command)
