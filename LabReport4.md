@@ -14,7 +14,7 @@ Keys pressed: ```<up><up><enter>``` The ```git clone git@github.com:Jupiternium/
 
 Step 3
 
-![Image](step3.png)
+![Image](step3correct.png)
 
 Keys pressed: ```<up><up><up><enter>``` The ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` was 3 up in the search history, so I used the up arrow to access it. ```<down><down><enter>``` The ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests``` command was the second to last command in the search history, so I used the down arrow to access it
 
@@ -28,12 +28,12 @@ Keys pressed: I typed in ```vim ListExamples.java``` then did the following sequ
 
 Step 5
 
-![Image](step5.png)
+![Image](step5correct.png)
 
 Keys pressed: ```<down><down><enter>``` The ```javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java``` was the second to last command I used, so I used the down arrow to access it. Then ```<up><up><up><enter>``` since the ```java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests``` was now 3 up in the search history, so I used the up arrow to access it.
 
 Step 6
 
-![Image](step6.png)
+![Image](step7correct.png)
 
 Keys pressed: I typed in ```git add .```, then ```git commit -m "Fixed ListExamples.java"``` and then ```git push``` in order to push the changes to my repository.
