@@ -105,3 +105,21 @@ done
 -The line ```} else {``` was added after the ```if``` condition.
 
 -The line ```break;``` was added inside the ```else``` block.
+
+## Reflection
+
+Soemthing I learned from the secon dhalf of this quarter that I didn't know beforehand was pretty much the entirety of bash scripting. I was kind of familiar with command line arguments, but I didn't realize how in depth they went in addition to bash scripting. Specifically, I didn't know that you could do things like create a new file/directory within a bash script, and send the output of a certain command to that file. That was really fascinating to me. I did that in my code with this block here: 
+
+```
+# loop until the current Fibonacci number is greater than the number
+while [ $curr -le $n ]; do
+  # append the current Fibonacci number and a newline character to the expected output file
+  echo $curr >> $expected_output_file
+  # update the previous and current Fibonacci numbers
+  temp=$curr
+  curr=$((prev + curr))
+  prev=$temp
+done
+````
+
+It is still something that kind of blows my mind. 
